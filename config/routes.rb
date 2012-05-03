@@ -1,7 +1,8 @@
 Omnitest::Application.routes.draw do
+  resource :contents, :collection => { :edit_individual => :post}
   get "contents/index"
   get "contents/buttons"
-
+  post "contents/push"
   post "contents/buttons"
  match "/auth/:provider/callback" => "contents#authorize"
   match "/logout" => "sample#destroy", :as => :logout

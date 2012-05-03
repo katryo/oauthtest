@@ -15,13 +15,33 @@ class ContentsController < ApplicationController
     redirect_to :action=>'buttons'
   end
 
-  def form_tag 
-    #render :text => "helloooooooo!"
+  def push
+      Twitter.update("form_tagテスト") 
 # Twitter.update("testtest", options={}) 
   end
 
   def buttons
-    @msg = 'Helllllllllo'
-   Twitter.update("もっかいてすと") 
+    if params[:button_1] 
+      @msg = 'button_1'
+    elsif params[:button_2]
+      @msg = 'bottun_2'
+    elsif params[:button_3] 
+      @msg = 'button_3'
+    elsif params[:buttoon_4]
+      @msg = 'bottun_4'
+    else
+      #Twitter.update("アイエエエ！？") 
+    end
+    #if button_number = 0
+    #  Twitter.update("もっかいてすと") 
+   # end
+  end
+
+  def edit_individual
+   @products = 0 
+  end
+
+  def show
+
   end
 end

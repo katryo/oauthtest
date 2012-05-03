@@ -1,7 +1,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <%= @msg %>
-  asfadfasfa
-<%= form_tag action: "buttons" do %>
-  <%= submit_tag 'test button', confirm: 'ツイートできた……と思う。あ、ボタン連打するとエラー出るからやめとけよ', disable_with: 'please wait...' %>
-<% end %>
+<%= form_tag :action => 'buttons' do %>
+  <%= submit_tag 'テスト1', :confirm => "正気ですか？",:name => 'button_1', :class => 'btn btn-large' %>
+
+  <%= submit_tag 'テスト2', :name => 'button_2', :confirm => "こんふぁーむ", :class => 'btn btn-large' %>
+    <%= submit_tag 'テスト3', :confirm => "こんふぁーむ", :name => 'button_3', :class => 'btn btn-large' %>
+    <%= submit_tag 'テスト4', :confirm => "こんふぁーむ", :name => 'button_4', :class => 'btn btn-large' %>
+
+
+
+  <% end %>
+  <%= button_tag :type => 'button', :class => 'btn btn-large' do %>
+    <%= content_tag(:strong, 'Ask me!') %>
+  <% end %>
+  
 
