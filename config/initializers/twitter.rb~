@@ -1,0 +1,5 @@
+Twitter.configure do |config|
+  config.consumer_token = Devise.omniauth_configs[:twitter].args.first
+  config.consumer_secret = Devise.omniauth_configs[:twitter].args.last
+end
+
