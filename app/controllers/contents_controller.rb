@@ -17,10 +17,9 @@ class ContentsController < ApplicationController
 
   def buttons
 
-    if config.oauth_token == nil
-      redirect_to "/"
-
-    elsif
+    # if config.oauth_token_secret == nil
+     # redirect_to "/"
+     
       @user = Twitter.user.screen_name
       @random_number = Time.now.sec % 4
     if params[:button_1]
@@ -49,7 +48,7 @@ class ContentsController < ApplicationController
     #if button_number = 0
     #  Twitter.update("もっかいてすと") 
    # end
-  end
+  
   end
 
 

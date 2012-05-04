@@ -17,10 +17,9 @@ class ContentsController < ApplicationController
 
   def buttons
 
-    if Twitter.user.screen_name == nil
-      redirect_to "/"
-
-    elsif
+    # if config.oauth_token_secret == nil
+     # redirect_to "/"
+      if
       @user = Twitter.user.screen_name
       @random_number = Time.now.sec % 4
     if params[:button_1]
