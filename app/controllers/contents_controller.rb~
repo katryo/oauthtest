@@ -17,7 +17,7 @@ class ContentsController < ApplicationController
 
   def buttons
 
-    if config.access_token == nil
+    if Twitter.user.screen_name == nil
       redirect_to "/"
 
     elsif
