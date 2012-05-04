@@ -24,7 +24,7 @@ class ContentsController < ApplicationController
       @random_number = Time.now.sec % 4
     if params[:button_1]
 
-       if @random_number = 2 
+       if @random_number == 2 
          Twitter.update("にせほー！　にせほー！　そこにいるの？おしいー！　おしいー！　明日があるの！　3分間＼ハイ！／リプライを＼ハイ！／か・ぞ・え・て・たー＼人☆工☆知☆能☆／＼( ゜ヮ゜)＞＼(゜ヮ゜)／ ＼(゜ヮ゜)／ ＜(゜ヮ＾ )／ #にせほボタン http://nisehobutton.heroku.com/")
       elsif
         Twitter.update("@nisehorn @nisehorrn @nisehorrrn @nisehorrrrn にせほー #にせほボタン http://nisehobutton.heroku.com/") 
@@ -32,7 +32,7 @@ class ContentsController < ApplicationController
     button_pushed_1 = true
 
     elsif params[:button_2]
-      if @random_number = 3
+      if @random_number == 3
       Twitter.update("ロックスターはオワコン。時代はレッドブル #にせほボタン http://nisehobutton.heroku.com/")
       elsif
       Twitter.update("ロックスター・エナジードリンクなう #にせほボタン http://nisehobutton.heroku.com/")
