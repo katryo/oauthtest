@@ -1,4 +1,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<% if @user == nil %>
+  <%= redirect_to 'http://google.com' %>
+  <% end %>
 <p>
 <h2>
   ようこそ<%= render :text => @user %>さん。
@@ -22,21 +25,21 @@
   <%= form_tag :action => 'buttons' do %>
 
   <h3>にせほボタン</h3>
-  <p>「@nisehorn @nisehorrrn @nisehorrrrn にせほー」とツイートします。1/4の確率でちょっと特別なイベントが発生します。<br>
+  <p>「@nisehorn @nisehorrrn @nisehorrrrn にせほー」とツイートします。1/4の確率でちょっと特別なツイートになります。<br>
   <%= submit_tag 'にせほー', :confirm => "え、いいの",:name => 'button_1', :class => 'btn btn-large' %>
   </p>
   <br>
 
    <h3>ロックスターボタン</h3>
    <p>
-   「ロックスター・エナジードリンクなう」とツイートします。1/4の確率でちょっと特別なイベントが発生します。<br>
+   「ロックスター・エナジードリンクなう」とツイートします。1/4の確率でちょっと特別なツイートになります。<br>
   <%= submit_tag 'ロックスター・エナジードリンクなう', :name => 'button_2', :confirm => "え、いいの", :class => 'btn btn-large' %>
   </p>
   <br>
 
    <h3>ゆボタン</h3>
    <p>
-   「ゆ」とツイートします。なんか流行ってるらしいです。
+   「ゆ」とツイートします。なんか。<%= link_to '@kuttinpa', 'https://twitter.com/#!/kuttinpa', :target => '_blank' %>さんたちの間で流行ってるらしいです。
    <br>
    <%= submit_tag 'ゆ', :confirm => "え、いいの", :name => 'button_3', :class => 'btn btn-large' %>
    </p>
@@ -53,14 +56,6 @@
   </p>
 
    <br>
-
-   <h3>宣伝ボタン</h3>
-   <p>
-   同人音楽や同人ゲームの宣伝をツイートします。<%= link_to '@katryo', 'https://twitter.com/#!/katryo', :target => '_blank' %>とか<%= link_to '@clavinord', 'https://twitter.com/#!/clavinord', :target => '_blank' %>が喜びます。
-   <br>
-   <%= submit_tag '宣伝ボタン', :confirm => "え、いいの", :name => 'button_5', :class => 'btn btn-large' %>
-  </p>
-
 
   <% end %>
  

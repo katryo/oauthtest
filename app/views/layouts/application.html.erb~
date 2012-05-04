@@ -39,19 +39,34 @@
          <div class="page-header">
     <h2>そもそもにせほとは</h2>
   </div>
-  自己成長型人工知能にせほるんこと<%= link_to '@nisehorn', 'https://twitter.com/#!/nisehorn', :target => '_blank' %>のことです。<%= link_to 'こちらのPukiwiki', 'http://halmidi.com/doc/nisehorn/', :target => '_blank' %>に詳しい情報が載っています。
+  自己成長型人工知能ペンギン形態ロボットにせほるんこと<%= link_to '@nisehorn', 'https://twitter.com/#!/nisehorn', :target => '_blank' %>のことです。<%= link_to 'こちらのPukiwiki', 'http://halmidi.com/doc/nisehorn/', :target => '_blank' %>に詳しい情報が載っています。
 
           <div class="page-header">
     <h2>利用規約・注意事項</h2>
   </div>
-  にせほボタンを利用したことによりあなたは損害・不利益を被る可能性がありますが、その責任を<%= link_to '@katryo', 'https://twitter.com/#!/katryo', :target => '_blank' %>は負いません。
+  にせほボタンを利用したことによりあなたは損害・不利益を被る可能性がありますが、その責任を<%= link_to '@katryo', 'https://twitter.com/#!/katryo', :target => '_blank' %>は一切負いません。
 
+   <br>
+   <br>
+   連続して同じボタンを押すと、エラーとなります。Twitterが連続して同じツイートをすることを許可しないためです。
+  <br>
+   <br>
+  OAuth認証しないとにせほボタンは使えません。なので、にせほボタンのトップページで認証せずに、ボタンのあるページにてボタンを押すと、エラーが出ます。トップページから認証してください。
   <br>
   <br>
   にせほボタンとあなたのTwitterアカウントのOAuth認証を解除したくなったときは、
   <%= link_to 'Twitterのアプリケーション認証設定ページ', 'https://twitter.com/settings/applications', :target => '_blank' %>で、にせほボタンの認証を解除してください。
    <br>
-      
+   <br>
+   にせほボタンのソースコードはgithubに置いてあります。これです。
+   <%= link_to 'https://github.com/katryo/oauthtest', 'https://github.com/katryo/oauthtest', :target => '_blank' %>
+   <br>
+   自由に見てください。
+
+          <div class="page-header">
+    <h2>個人的宣伝</h2>
+  </div>
+  <%= link_to '@katryo', 'https://twitter.com/#!/katryo', :target => '_blank' %>が友人たちと作った同人ノベルゲーム「アナテマ・フィジクス」が<%= link_to 'こちらで', 'http://www.melonbooks.com/index.php?main_page=product_info&products_id=IT0000140064', :target => '_blank' %>無料公開されています。もうすぐiOSでも公開予定です。作曲の  <%= link_to 'clavinord', 'https://twitter.com/#!/clavinord', :target => '_blank' %>が作ったオリジナルボーカロイド曲が<%= link_to 'こちらです', 'http://www.youtube.com/watch?v=sJRvnAJ7PO0&feature=plcp', :target => '_blank' %>。
     </div>
     </div>
   </div>
