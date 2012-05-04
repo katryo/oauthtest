@@ -15,12 +15,12 @@ class ContentsController < ApplicationController
     redirect_to :action=>'buttons'
   end
 
-  def push
-      Twitter.update("form_tagテスト") 
-# Twitter.update("testtest", options={}) 
-  end
-
   def buttons
+
+    if Twitter.user.screen_name == nil
+      redirect_to "/"
+
+    elsif
       @user = Twitter.user.screen_name
       @random_number = Time.now.sec % 4
     if params[:button_1]
@@ -40,8 +40,7 @@ class ContentsController < ApplicationController
       Twitter.update("ゆ #にせほボタン http://nisehobutton.heroku.com/") 
     elsif params[:button_4]
       Twitter.update("#zekitterは神 #にせほボタン http://nisehobutton.heroku.com/") 
-    elsif params[:button_5]
-      Twitter.update("宣伝〜〜") 
+ 
 
     else
       #Twitter.update("アイエエエ！？") 
@@ -51,6 +50,8 @@ class ContentsController < ApplicationController
     #  Twitter.update("もっかいてすと") 
    # end
   end
+  end
+
 
   def edit_individual
    @products = 0 
