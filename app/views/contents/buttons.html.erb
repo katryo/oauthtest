@@ -17,7 +17,7 @@
   </p>
 <% if params[:button_1] || params[:button_2] || params[:button_3] || params[:button_4] %>  
   <%= render :text => @msg %>
-  <%= link_to '自分のツイートを確認する' , 'https://twitter.com/#!/' + @user, :target => "_blank", :class => 'btn btn-large btn-danger' %>
+  <%= link_to '自分のツイートを確認する' , 'https://twitter.com/#!/' + @user, :target => "_blank", :class => 'btn btn-large btn-info' %>
   <% end %>
   
   
@@ -26,14 +26,25 @@
 
   <h3>にせほボタン</h3>
   <p>「@nisehorn @nisehorrrn @nisehorrrrn にせほー」とツイートします。1/4の確率でちょっと特別なツイートになります。<br>
+
+   <% if params[:button_1] == nil %>
   <%= submit_tag 'にせほー', :confirm => "え、いいの",:name => 'button_1', :class => 'btn btn-large' %>
+<% elsif %>
+     <%= button_tag '連続して同じツイートはできません', :class => 'btn btn-large btn-warning', :disabled => 'disabled' %>
+   <% end %>
+
   </p>
   <br>
 
    <h3>ロックスターボタン</h3>
    <p>
    「ロックスター・エナジードリンクなう」とツイートします。1/4の確率でちょっと特別なツイートになります。ロックスター・エナジードリンクはファミリーマートでたまーに見かける黒い飲み物です。<%= link_to 'とある人', 'https://twitter.com/#!/nashacom', :target => '_blank' %>が京大で広め、今でも布教は続けられています。<br>
-  <%= submit_tag 'ロックスター・エナジードリンクなう', :name => 'button_2', :confirm => "え、いいの", :class => 'btn btn-large' %>
+   <% if params[:button_2] == nil %>
+     <%= submit_tag 'ロックスター・エナジードリンクなう', :name => 'button_2', :confirm => "え、いいの", :class => 'btn btn-large' %>
+     <% elsif %>
+     <%= button_tag '連続して同じツイートはできません', :class => 'btn btn-large btn-warning', :disabled => 'disabled' %>
+   <% end %>
+
   </p>
   <br>
 
@@ -41,7 +52,12 @@
    <p>
    「ゆ」とツイートします。なんか<%= link_to '@kuttinpa', 'https://twitter.com/#!/kuttinpa', :target => '_blank' %>さんたちの間で流行ってるらしいです。
    <br>
+   <% if params[:button_3] == nil %>
    <%= submit_tag 'ゆ', :confirm => "え、いいの", :name => 'button_3', :class => 'btn btn-large' %>
+    <% elsif %>
+     <%= button_tag '連続して同じツイートはできません', :class => 'btn btn-large btn-warning', :disabled => 'disabled' %>
+   <% end %>
+
    </p>
 
 
@@ -52,7 +68,11 @@
    <p>
    「#zekitterは神」とツイートします。<%= link_to '@zekitter', 'https://twitter.com/#!/zekitter', :target => '_blank' %>氏がふぁぼってくれます。
    <br>
+   <% if params[:button_4] == nil%>
    <%= submit_tag '#zekitterは神', :confirm => "え、いいの", :name => 'button_4', :class => 'btn btn-large' %>
+   <% elsif %>
+     <%= button_tag '連続して同じツイートはできません', :class => 'btn btn-large btn-warning', :disabled => 'disabled' %>
+   <% end %>
   </p>
 
    <br>
