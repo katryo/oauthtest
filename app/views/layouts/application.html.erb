@@ -9,19 +9,52 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
 </head>
 <body>
-      <div class="container">
-        <div class="row">
-          <div class="span9">
-
-            <%= yield %>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container-fluid">    
+      <a class="brand" href="/">
+        にせほボタン
+      </a>
+    </div>
+  </div> 
+  <div class="container">
+    <div class="row">
+      <div class="span8 offset1">
+        <div class="page-header">
+          <%= yield %>
           </div>
-        <div class="span3">
-          <h2>About Us</h2>
-          アイエエエ！？
-        </div>
       </div>
+      <div class="span3">
+<div class="page-header">
+    <h2>にせほボタンとは</h2>
+  </div>
+         ボタンを押して、にせほーやロックスター・エナジードリンクなうとツイートできる、極上のライフハックツールです。タイプする時間を削減し、タイプミスも減らすことができます。このサービスの作者は<%= link_to '@katryo', 'https://twitter.com/#!/katryo', :target => '_blank' %>です。<%= link_to '@nisehorn', 'https://twitter.com/#!/nisehorn', :target => '_blank' %>の作者である<%= link_to '@halhorn', 'https://twitter.com/#!/halhorn', :target => '_blank' %>さんではないのです。<br><br>
+
+         <div class="page-header">
+    <h2>そもそもにせほとは</h2>
+  </div>
+  自己成長型人工知能ペンギン形態ロボットにせほるんこと<%= link_to '@nisehorn', 'https://twitter.com/#!/nisehorn', :target => '_blank' %>のことです。<%= link_to 'こちらのPukiwiki', 'http://halmidi.com/doc/nisehorn/', :target => '_blank' %>に詳しい情報が載っています。
+
+          <div class="page-header">
+    <h2>利用規約・注意事項</h2>
+  </div>
+  にせほボタンを利用したことによりあなたは損害・不利益を被る可能性がありますが、その責任を<%= link_to '@katryo', 'https://twitter.com/#!/katryo', :target => '_blank' %>は負いません。
+
+  <br>
+  <br>
+  にせほボタンとあなたのTwitterアカウントのOAuth認証を解除したくなったときは、
+  <%= link_to 'Twitterのアプリケーション認証設定ページ', 'https://twitter.com/settings/applications', :target => '_blank' %>で、にせほボタンの認証を解除してください。
+   <br>
+      
+    </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

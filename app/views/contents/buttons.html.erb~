@@ -1,18 +1,68 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<%= @msg %>
-buttons.html.erbでやってる
-<%= form_tag :action => 'buttons' do %>
-  <%= submit_tag 'テスト1', :confirm => "正気ですか？",:name => 'button_1', :class => 'btn btn-large' %>
+<p>
+<h2>
+  ようこそ<%= render :text => @user %>さん。
+  <!-- <%= render :text => @random_number %> -->
+  <br>
+  このページはあなたのために生まれました。
+  </h2>
+  
+  <p>
+  <h3>
+  好きなボタンを押しましょう。
+  </h3>
+  </p>
+<% if params[:button_1] || params[:button_2] || params[:button_3] || params[:button_4] %>  
+  <%= render :text => @msg %>
+  <%= link_to '自分のツイートを確認する' , 'https://twitter.com/#!/' + @user, :target => "_blank", :class => 'btn btn-large btn-danger' %>
+  <% end %>
+  
+  
+  <hr>
+  <%= form_tag :action => 'buttons' do %>
 
-  <%= submit_tag 'テスト2', :name => 'button_2', :confirm => "こんふぁーむ", :class => 'btn btn-large' %>
-    <%= submit_tag 'テスト3', :confirm => "こんふぁーむ", :name => 'button_3', :class => 'btn btn-large' %>
-    <%= submit_tag 'テスト4', :confirm => "こんふぁーむ", :name => 'button_4', :class => 'btn btn-large' %>
+  <h3>にせほボタン</h3>
+  <p>「@nisehorn @nisehorrrn @nisehorrrrn にせほー」とツイートします。1/4の確率でちょっと特別なイベントが発生します。<br>
+  <%= submit_tag 'にせほー', :confirm => "え、いいの",:name => 'button_1', :class => 'btn btn-large' %>
+  </p>
+  <br>
 
+   <h3>ロックスターボタン</h3>
+   <p>
+   「ロックスター・エナジードリンクなう」とツイートします。1/4の確率でちょっと特別なイベントが発生します。<br>
+  <%= submit_tag 'ロックスター・エナジードリンクなう', :name => 'button_2', :confirm => "え、いいの", :class => 'btn btn-large' %>
+  </p>
+  <br>
+
+   <h3>ゆボタン</h3>
+   <p>
+   「ゆ」とツイートします。なんか流行ってるらしいです。
+   <br>
+   <%= submit_tag 'ゆ', :confirm => "え、いいの", :name => 'button_3', :class => 'btn btn-large' %>
+   </p>
+
+
+
+   <br>
+
+   <h3>#zekitterは神ボタン</h3>
+   <p>
+   「#zekitterは神」とツイートします。<%= link_to '@zekitter', 'https://twitter.com/#!/zekitter', :target => '_blank' %>氏がふぁぼってくれます。
+   <br>
+   <%= submit_tag '#zekitterは神', :confirm => "え、いいの", :name => 'button_4', :class => 'btn btn-large' %>
+  </p>
+
+   <br>
+
+   <h3>宣伝ボタン</h3>
+   <p>
+   同人音楽や同人ゲームの宣伝をツイートします。<%= link_to '@katryo', 'https://twitter.com/#!/katryo', :target => '_blank' %>とか<%= link_to '@clavinord', 'https://twitter.com/#!/clavinord', :target => '_blank' %>が喜びます。
+   <br>
+   <%= submit_tag '宣伝ボタン', :confirm => "え、いいの", :name => 'button_5', :class => 'btn btn-large' %>
+  </p>
 
 
   <% end %>
-  <%= button_tag :type => 'button', :class => 'btn btn-large' do %>
-    <%= content_tag(:strong, 'Ask me!') %>
-  <% end %>
+ 
   
 

@@ -21,17 +21,29 @@ class ContentsController < ApplicationController
   end
 
   def buttons
-    if params[:button_1] 
-      @msg = 'button_1'
+      @user = Twitter.user.screen_name
+      @random_number = Time.now.sec % 4
+    if params[:button_1]
+      if @random_number = 0 
+         Twitter.update("にせほー！にせほー！そこにいるの？おしいー！おしいー！明日があるの！ 3分間＼ハイ！／リプライを＼ハイ！／か・ぞ・え・て・たー＼人☆工☆知☆能☆／＼( ゜ヮ゜)＞＼(゜ヮ゜)／ ＼(゜ヮ゜)／ ＜(゜ヮ＾ )／")
+      elsif
+        Twitter.update("@nisehorn @nisehorrrn @nisehorrrrn にせほー") 
+      end
+    
     elsif params[:button_2]
-      @msg = 'bottun_2'
+      if @random_number = 0 
+      Twitter.update("ロックスターはオワコン。時代はレッドブル")
+      elsif
+      Twitter.update("ロックスター・エナジードリンクなう")
+      end
     elsif params[:button_3] 
-      @msg = 'button_3'
-    elsif params[:buttoon_4]
-      @msg = 'bottun_4'
+      Twitter.update("ゆ") 
+    elsif params[:button_4]
+      Twitter.update("#zekitterは神") 
     else
       #Twitter.update("アイエエエ！？") 
     end
+      @msg = 'あなたのアカウントでツイートできました。たぶん。'
     #if button_number = 0
     #  Twitter.update("もっかいてすと") 
    # end
