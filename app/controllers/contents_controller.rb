@@ -25,21 +25,21 @@ class ContentsController < ApplicationController
       @random_number = Time.now.sec % 4
     if params[:button_1]
       if @random_number = 0 
-         Twitter.update("にせほー！にせほー！そこにいるの？おしいー！おしいー！明日があるの！ 3分間＼ハイ！／リプライを＼ハイ！／か・ぞ・え・て・たー＼人☆工☆知☆能☆／＼( ゜ヮ゜)＞＼(゜ヮ゜)／ ＼(゜ヮ゜)／ ＜(゜ヮ＾ )／")
+         Twitter.update("にせほー！にせほー！そこにいるの？おしいー！おしいー！明日があるの！ 3分間＼ハイ！／リプライを＼ハイ！／か・ぞ・え・て・たー＼人☆工☆知☆能☆／＼( ゜ヮ゜)＞＼(゜ヮ゜)／ ＼(゜ヮ゜)／ ＜(゜ヮ＾ )／ #にせほボタン http://nisehobutton.heroku.com/")
       elsif
-        Twitter.update("@nisehorn @nisehorrrn @nisehorrrrn にせほー") 
+        Twitter.update("@nisehorn @nisehorrrn @nisehorrrrn にせほー #にせほボタン http://nisehobutton.heroku.com/") 
       end
     
     elsif params[:button_2]
       if @random_number = 0 
-      Twitter.update("ロックスターはオワコン。時代はレッドブル")
+      Twitter.update("ロックスターはオワコン。時代はレッドブル #にせほボタン http://nisehobutton.heroku.com/")
       elsif
-      Twitter.update("ロックスター・エナジードリンクなう")
+      Twitter.update("ロックスター・エナジードリンクなう #にせほボタン http://nisehobutton.heroku.com/")
       end
     elsif params[:button_3] 
-      Twitter.update("ゆ") 
+      Twitter.update("ゆ #にせほボタン http://nisehobutton.heroku.com/") 
     elsif params[:button_4]
-      Twitter.update("#zekitterは神") 
+      Twitter.update("#zekitterは神 #にせほボタン http://nisehobutton.heroku.com/") 
     elsif params[:button_5]
       Twitter.update("宣伝〜〜") 
 

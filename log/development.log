@@ -42176,3 +42176,210 @@ Served asset /contents.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-04 16:12:43 +0900
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/contents/buttons" for 127.0.0.1 at 2012-05-04 16:59:59 +0900
+Processing by ContentsController#buttons as HTML
+Completed 500 Internal Server Error in 576ms
+
+Twitter::Error::Unauthorized (Could not authenticate you.):
+  app/controllers/contents_controller.rb:24:in `buttons'
+
+
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (19.9ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-04 17:00:07 +0900
+Processing by ContentsController#index as HTML
+  Rendered contents/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (undefined method `NewInstance' for #<V8::C::Value:0x007fd6798f7ad0>
+  (in /Users/katouryou/work/oauthtest/app/assets/stylesheets/bootstrap_and_overrides.css.less)):
+    6:     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    7:   <![endif]-->
+    8:   <title>にせほボタン</title>
+    9:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    10:   <%= javascript_include_tag "application" %>
+    11:   <%= csrf_meta_tags %>
+    12:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__2609689319609162808_70279593798340'
+
+
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.0ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-04 17:00:07 +0900
+Processing by ContentsController#index as HTML
+  Rendered contents/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (undefined method `NewInstance' for #<V8::C::Value:0x007fd6798f7ad0>
+  (in /Users/katouryou/work/oauthtest/app/assets/stylesheets/bootstrap_and_overrides.css.less)):
+    6:     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    7:   <![endif]-->
+    8:   <title>にせほボタン</title>
+    9:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    10:   <%= javascript_include_tag "application" %>
+    11:   <%= csrf_meta_tags %>
+    12:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__2609689319609162808_70279593798340'
+
+
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.3ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-04 17:04:02 +0900
+Processing by ContentsController#index as HTML
+  Rendered contents/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 50ms
+
+ActionView::Template::Error (undefined method `NewInstance' for #<V8::C::Value:0x007fe081089af8>
+  (in /Users/katouryou/work/oauthtest/app/assets/stylesheets/bootstrap_and_overrides.css.less)):
+    6:     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    7:   <![endif]-->
+    8:   <title>にせほボタン</title>
+    9:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    10:   <%= javascript_include_tag "application" %>
+    11:   <%= csrf_meta_tags %>
+    12:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3496381297212764372_70301113975680'
+
+
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-04 17:05:56 +0900
+Processing by ContentsController#index as HTML
+  Rendered contents/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (undefined method `NewInstance' for #<V8::C::Value:0x007fb0e1131458>
+  (in /Users/katouryou/work/oauthtest/app/assets/stylesheets/bootstrap_and_overrides.css.less)):
+    6:     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    7:   <![endif]-->
+    8:   <title>にせほボタン</title>
+    9:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    10:   <%= javascript_include_tag "application" %>
+    11:   <%= csrf_meta_tags %>
+    12:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___2727996867035846157_70198858678100'
+
+
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (27.3ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (38.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-04 17:10:54 +0900
+Processing by ContentsController#index as HTML
+  Rendered contents/index.html.erb within layouts/application (1.9ms)
+Compiled bootstrap_and_overrides.css  (663ms)  (pid 17795)
+Compiled application.css  (669ms)  (pid 17795)
+Compiled jquery.js  (4ms)  (pid 17795)
+Compiled jquery_ujs.js  (0ms)  (pid 17795)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 17795)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 17795)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 17795)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 17795)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 17795)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 17795)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 17795)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 17795)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 17795)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 17795)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 17795)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 17795)
+Compiled twitter/bootstrap.js  (70ms)  (pid 17795)
+Compiled bootstrap.js  (65ms)  (pid 17795)
+Compiled contents.js  (0ms)  (pid 17795)
+Compiled application.js  (180ms)  (pid 17795)
+Completed 200 OK in 955ms (Views: 955.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/contents.js?body=1" for 127.0.0.1 at 2012-05-04 17:10:56 +0900
+Served asset /contents.js - 304 Not Modified (1ms)

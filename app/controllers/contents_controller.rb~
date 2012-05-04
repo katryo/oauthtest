@@ -40,6 +40,9 @@ class ContentsController < ApplicationController
       Twitter.update("ゆ") 
     elsif params[:button_4]
       Twitter.update("#zekitterは神") 
+    elsif params[:button_5]
+      Twitter.update("宣伝〜〜") 
+
     else
       #Twitter.update("アイエエエ！？") 
     end
