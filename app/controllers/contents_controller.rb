@@ -45,7 +45,13 @@ class ContentsController < ApplicationController
     button_pushed_3 = true
     elsif params[:button_4]
       Twitter.update("#zekitterは神 #にせほボタン http://nisehobutton.heroku.com/") 
+elsif params[:button_5]
+      Twitter.update("アイエエエ！？　ニンジャ！？　ニンジャナンデ！？ #にせほボタン http://nisehobutton.heroku.com/") 
  
+      elsif params[:button_6]
+      Twitter.update("たいぷかのんほー #にせほボタン http://nisehobutton.heroku.com/") 
+ 
+
    # @button_pushed_4 = true 
 
     else

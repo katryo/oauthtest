@@ -15,7 +15,7 @@
   好きなボタンを押しましょう。
 </h3>
   </p>
-<% if params[:button_1] || params[:button_2] || params[:button_3] || params[:button_4] %>  
+  <% if params[:button_1] || params[:button_2] || params[:button_3] || params[:button_4] || params[:button_5] || params[:button_6] %>  
   <%= render :text => @msg %>
   <%= link_to '自分のツイートを確認する' , 'https://twitter.com/#!/' + @user, :target => "_blank", :class => 'btn btn-large btn-info' %>
   <% end %>
@@ -74,6 +74,30 @@
      <%= button_tag '連続して同じツイートはできません', :class => 'btn btn-large btn-warning', :disabled => 'disabled' %>
    <% end %>
   </p>
+  <br>
+     <h3>アイエエエ！？　ボタン</h3>
+   <p>
+   「アイエエエ！？　ニンジャ！？　ニンジャナンデ！？」とツイートします。突然ニンジャに遭遇したときに便利ですね。詳しくは<%= link_to '@njslyr', 'https://twitter.com/#!/njslyr', :target => '_blank' %>を見てください。
+   <br>
+   <% if params[:button_5] == nil%>
+   <%= submit_tag 'アイエエエ！？　ニンジャ！？　ニンジャナンデ！？', :confirm => "え、いいの", :name => 'button_5', :class => 'btn btn-large' %>
+   <% elsif %>
+     <%= button_tag '連続して同じツイートはできません', :class => 'btn btn-large btn-warning', :disabled => 'disabled' %>
+   <% end %>
+   <br>
+   <br>
+  </p>
+     <h3>たいぷかのんほーボタン</h3>
+   <p>
+   「たいぷかのんほー」とツイートします。よくわからないけど流行ってるらしいです。   <br>
+   <% if params[:button_6] == nil%>
+   <%= submit_tag 'たいぷかのんほー', :confirm => "え、いいの", :name => 'button_6', :class => 'btn btn-large' %>
+   <% elsif %>
+     <%= button_tag '連続して同じツイートはできません', :class => 'btn btn-large btn-warning', :disabled => 'disabled' %>
+   <% end %>
+  </p>
+
+
 
    <br>
 <%= render :text => @random_number %>
