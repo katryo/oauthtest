@@ -16,9 +16,13 @@
 </h3>
   </p>
   <% if params[:button_1] || params[:button_2] || params[:button_3] || params[:button_4] || params[:button_5] || params[:button_6] %>  
-  <%= render :text => @msg %>
-  <%= link_to '自分のツイートを確認する' , 'https://twitter.com/#!/' + @user, :target => "_blank", :class => 'btn btn-large btn-info' %>
-  <% end %>
+    <%= render :text => @msg %>
+    <%= link_to '自分のツイートを確認する' , 'https://twitter.com/#!/' + @user, :target => "_blank", :class => 'btn btn-large btn-info' %>
+    <%= br %>
+    <%= br %>
+    <%= render :text => "にせほボタンを使い終わったあとは、Twitterのアプリケーション認証設定ページでOAuth認証を解除することをおすすめします。" %>
+
+  <%= link_to 'Twitterのアプリケーション認証設定ページ', 'https://twitter.com/settings/applications', :class => 'btn btn-large btn-danger' %>  <% end %>
   
   
   <hr>
@@ -77,7 +81,7 @@
   <br>
      <h3>アイエエエ！？　ボタン</h3>
    <p>
-   「アイエエエ！？　ニンジャ！？　ニンジャナンデ！？」とツイートします。詳しくは<%= link_to '@njslyr', 'https://twitter.com/#!/njslyr', :target => '_blank' %>を見てください。
+   「アイエエエ！？　ニンジャ！？　ニンジャナンデ！？」とツイートします。突然ニンジャに遭遇したときに便利ですね。詳しくは<%= link_to '@njslyr', 'https://twitter.com/#!/njslyr', :target => '_blank' %>を見てください。
    <br>
    <% if params[:button_5] == nil%>
    <%= submit_tag 'アイエエエ！？　ニンジャ！？　ニンジャナンデ！？', :confirm => "え、いいの", :name => 'button_5', :class => 'btn btn-large' %>

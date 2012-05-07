@@ -1,13 +1,24 @@
 Omnitest::Application.routes.draw do
+  resources :entries
+  get "entries/index"
+  get "entry/index"
+ get "entries/authorize"
+  get "entry/authorize"
+  get "entries/assets"
+  get "contents/assets"
+
   resource :contents, :collection => { :edit_individual => :post}
   get "contents/index"
   get "contents/buttons"
-  post "contents/push"
+#  post "contents/push"
   post "contents/buttons"
+# match "contents/auth/:provider/callback" => "contents#authorize"
  match "/auth/:provider/callback" => "contents#authorize"
-  match "/logout" => "sample#destroy", :as => :logout
+  #match "contents/logout" => "sample#destroy", :as => :logout
+  match "contents/logout" => "sample#destroy", :as => :logout
 
   root to: 'contents#index'
+  #root to: 'contents#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

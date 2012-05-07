@@ -1,17 +1,24 @@
 #encoding: utf-8
 class ContentsController < ApplicationController
-  def index
+#before_filter :gate
+ # skip_before_filter :gate, only: [:authorize, :index]
+def index
   end
 
 
   #https://github.com/ryonext/TwitRL/blob/master/app/controllers/list_controller.rbからとってきた
   def authorize
+
+    @passport = true
     #OAuthする
     auth = request.env["omniauth.auth"]
     Twitter.configure do |config|
       config.oauth_token = auth['credentials']['token']
       config.oauth_token_secret = auth['credentials']['secret']
     end
+    
+    @passport = true
+
     redirect_to :action=>'buttons'
   end
 
@@ -72,4 +79,13 @@ elsif params[:button_5]
   def show
 
   end
+
+  private
+
+  def gate
+    if @passport == nil
+      redirect_to "/"
+
+  end
+end
 end
