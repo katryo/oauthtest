@@ -3,6 +3,7 @@ class ContentsController < ApplicationController
 #before_filter :gate
  # skip_before_filter :gate, only: [:authorize, :index]
 def index
+  reset_session
   end
 
 
@@ -37,7 +38,7 @@ def index
        else
         Twitter.update("@nisehorn @nisehorrn @nisehorrrn @nisehorrrrn にせほー #にせほボタン http://nisehobutton.heroku.com/") 
       end
-    button_pushed_1 = true
+    session[:button_pushed_1] = true
 
     elsif params[:button_2]
       if @random_number == 3
@@ -46,17 +47,20 @@ def index
       Twitter.update("ロックスター・エナジードリンクなう #にせほボタン http://nisehobutton.heroku.com/")
       end
 
-    button_pushed_2 = true
+  session[:button_pushed_2] = true
     elsif params[:button_3] 
       Twitter.update("ゆ #にせほボタン http://nisehobutton.heroku.com/") 
-    button_pushed_3 = true
+    session[:button_pushed_3] = true
     elsif params[:button_4]
       Twitter.update("#zekitterは神 #にせほボタン http://nisehobutton.heroku.com/") 
+    session[:button_pushed_4] = true
 elsif params[:button_5]
       Twitter.update("アイエエエ！？　ニンジャ！？　ニンジャナンデ！？ #にせほボタン http://nisehobutton.heroku.com/") 
+    session[:button_pushed_5] = true
  
       elsif params[:button_6]
       Twitter.update("たいぷかのんほー #にせほボタン http://nisehobutton.heroku.com/") 
+    session[:button_pushed_6] = true
  
 
    # @button_pushed_4 = true 
