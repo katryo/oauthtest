@@ -5,7 +5,6 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 
 gem 'omniauth'
 gem 'twitter'
@@ -27,7 +26,10 @@ end
 # Heroku
 group :production do
     gem 'pg'
-#    gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+end
+
+group :development do
+gem 'sqlite3'
 end
 
 

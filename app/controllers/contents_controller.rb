@@ -3,27 +3,30 @@ class ContentsController < ApplicationController
 #before_filter :gate
  # skip_before_filter :gate, only: [:authorize, :index]
 def index
-  reset_session
+  #reset_session
   end
 
 
   #https://github.com/ryonext/TwitRL/blob/master/app/controllers/list_controller.rbからとってきた
-  def authorize
+ # def authorize
 
-    @passport = true
+  #  @passport = true
     #OAuthする
-    auth = request.env["omniauth.auth"]
-    Twitter.configure do |config|
-      config.oauth_token = auth['credentials']['token']
-      config.oauth_token_secret = auth['credentials']['secret']
-    end
+   # auth = request.env["omniauth.auth"]
+  #  Twitter.configure do |config|
+   #   config.oauth_token = auth['credentials']['token']
+    #  config.oauth_token_secret = auth['credentials']['secret']
+    #end
     
-    @passport = true
+    #@passport = true
 
-    redirect_to :action=>'buttons'
-  end
+    #redirect_to :action=>'buttons'
+  #end
 
   def buttons
+
+    if current_user
+
 
      #if config.oauth_token_secret == nil
       #redirect_to "/"
@@ -65,13 +68,14 @@ elsif params[:button_5]
 
    # @button_pushed_4 = true 
 
-    else
-      #Twitter.update("アイエエエ！？") 
+
     end
       @msg = 'あなたのアカウントでツイートできました。たぶん。'
-    #if button_number = 0
-    #  Twitter.update("もっかいてすと") 
+    else
+     redirect_to '/'
+
     end
+  end
   
 
 
@@ -83,13 +87,5 @@ elsif params[:button_5]
   def show
 
   end
+    end
 
-  private
-
-  def gate
-    if @passport == nil
-      redirect_to "/"
-
-  end
-end
-end

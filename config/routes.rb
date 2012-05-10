@@ -13,9 +13,9 @@ Omnitest::Application.routes.draw do
 #  post "contents/push"
   post "contents/buttons"
 # match "contents/auth/:provider/callback" => "contents#authorize"
- match "/auth/:provider/callback" => "contents#authorize"
+ match "/auth/:provider/callback" => "sessions#create"
   #match "contents/logout" => "sample#destroy", :as => :logout
-  match "contents/logout" => "sample#destroy", :as => :logout
+  match "/signout" => "sessions#destroy", :as => :signout
 
   root to: 'contents#index'
   #root to: 'contents#index'

@@ -19,10 +19,7 @@
     <%= render :text => @msg %>
     <%= link_to '自分のツイートを確認する' , 'https://twitter.com/#!/' + @user, :target => "_blank", :class => 'btn btn-large btn-info' %>
     <br>
-    <br>
-    <%= render :text => "にせほボタンを使い終わったあとは、Twitterのアプリケーション認証設定ページでOAuth認証を解除することをおすすめします。" %>
-
-  <%= link_to 'Twitterのアプリケーション認証設定ページ', 'https://twitter.com/settings/applications', :class => 'btn btn-large btn-danger' %>  <% end %>
+  <% end %>
   
   
   <hr>
