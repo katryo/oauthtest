@@ -1,6 +1,5 @@
 Omnitest::Application.routes.draw do
-  resource :entry
-  resource :entries
+
   resource :contents
   get "contents/index"
   get "contents/buttons"
