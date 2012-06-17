@@ -1,13 +1,6 @@
 Omnitest::Application.routes.draw do
-  resources :entries
-  get "entries/index"
-  get "entry/index"
- get "entries/authorize"
-  get "entry/authorize"
-  get "entries/assets"
-  get "contents/assets"
 
-  resource :contents, :collection => { :edit_individual => :post}
+  resource :contents
   get "contents/index"
   get "contents/buttons"
 #  post "contents/push"

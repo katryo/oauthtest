@@ -1,36 +1,13 @@
 #encoding: utf-8
 class ContentsController < ApplicationController
-#before_filter :gate
- # skip_before_filter :gate, only: [:authorize, :index]
 def index
-  #reset_session
   end
 
 
-  #https://github.com/ryonext/TwitRL/blob/master/app/controllers/list_controller.rbからとってきた
- # def authorize
-
-  #  @passport = true
-    #OAuthする
-   # auth = request.env["omniauth.auth"]
-  #  Twitter.configure do |config|
-   #   config.oauth_token = auth['credentials']['token']
-    #  config.oauth_token_secret = auth['credentials']['secret']
-    #end
-    
-    #@passport = true
-
-    #redirect_to :action=>'buttons'
-  #end
 
   def buttons
 
     if current_user
-
-
-     #if config.oauth_token_secret == nil
-      #redirect_to "/"
-     
     
       @user = Twitter.user.screen_name
       @random_number = Time.now.sec % 4
@@ -66,7 +43,6 @@ elsif params[:button_5]
     session[:button_pushed_6] = true
  
 
-   # @button_pushed_4 = true 
 
 
     end
@@ -79,10 +55,6 @@ elsif params[:button_5]
   
 
 
-
-  def edit_individual
-   @products = 0 
-  end
 
   def show
 

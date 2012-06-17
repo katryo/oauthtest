@@ -5,7 +5,6 @@ class SessionsController < ApplicationController
     user = User.find_by_provider_and_uid(auth["provider"], auth["uid"]) || User.create_with_omniauth(auth)
     session[:user_id] = user.id
    
-    #この真下のコードを使うと、「認証してない人が、認証している他人のauthを使える」という事態が発生してしまう。
     Twitter.configure do |config|
       config.oauth_token = auth['credentials']['token']
       config.oauth_token_secret = auth['credentials']['secret']

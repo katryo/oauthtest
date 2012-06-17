@@ -1,11 +1,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<% if @user == nil %>
-  <%= redirect_to 'http://google.com' %>
-  <% end %>
 <p>
 <h2>
   ようこそ<%= render :text => @user %>さん。
-  <!-- <%= render :text => @random_number %> -->
   <br>
   このページはあなたのために生まれました。
   </h2>
@@ -99,9 +95,8 @@
   </p>
 
 
+  <%= render :text => @random_number %>
 
-   <br>
-<%= render :text => @random_number %>
   <% end %>
  
   
