@@ -78567,3 +78567,37 @@ Completed 200 OK in 738ms (Views: 41.1ms | ActiveRecord: 0.1ms)
 
 Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 23:06:55 +0900
 Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-17 23:19:04 +0900
+Processing by ContentsController#index as HTML
+  Rendered contents/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 23:19:05 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2012-06-17 23:19:09 +0900
+
+
+Started GET "/auth/twitter/callback?oauth_token=2mP7UJSn6hVxVNsBKBG9qwkhmmrmroriE9fj9hoaf0U&oauth_verifier=xrHUFpmfqK3wk5tXURCh35BpLe5XMSQYrFEkXFrAc" for 127.0.0.1 at 2012-06-17 23:19:11 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"2mP7UJSn6hVxVNsBKBG9qwkhmmrmroriE9fj9hoaf0U", "oauth_verifier"=>"xrHUFpmfqK3wk5tXURCh35BpLe5XMSQYrFEkXFrAc", "provider"=>"twitter"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'twitter' AND "users"."uid" = '595589986' LIMIT 1
+Redirected to http://oauthtest.dev/contents/buttons
+Completed 302 Found in 12ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/contents/buttons" for 127.0.0.1 at 2012-06-17 23:19:12 +0900
+Processing by ContentsController#buttons as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered text template (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered contents/buttons.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 738ms (Views: 37.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 23:19:13 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
