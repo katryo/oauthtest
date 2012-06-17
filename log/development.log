@@ -78427,3 +78427,143 @@ ActionController::RoutingError (No route matches [GET] "/assets/images/overlay.p
 
 
   Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/contents/buttons" for 127.0.0.1 at 2012-06-17 23:06:18 +0900
+
+ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:398:in `retrieve_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `_run__3644850745555436916__call__3935083057291745457__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  railties (3.2.3) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:146:in `handle'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:99:in `rescue in block (2 levels) in start'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:96:in `block (2 levels) in start'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:86:in `each'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:86:in `block in start'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:66:in `loop'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:66:in `start'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:13:in `run'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/bin/nack_worker:4:in `<main>'
+
+
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/contents/buttons" for 127.0.0.1 at 2012-06-17 23:06:32 +0900
+
+ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:398:in `retrieve_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `_run__3644850745555436916__call__3935083057291745457__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  railties (3.2.3) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:146:in `handle'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:99:in `rescue in block (2 levels) in start'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:96:in `block (2 levels) in start'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:86:in `each'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:86:in `block in start'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:66:in `loop'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:66:in `start'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:13:in `run'
+  /Users/katouryou/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/bin/nack_worker:4:in `<main>'
+
+
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (21.8ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.2ms)
+
+
+Started GET "/contents/buttons" for 127.0.0.1 at 2012-06-17 23:06:40 +0900
+Processing by ContentsController#buttons as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+Completed 500 Internal Server Error in 853ms
+
+Twitter::Error::Unauthorized (Could not authenticate you.):
+  app/controllers/contents_controller.rb:12:in `buttons'
+
+
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/katouryou/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-17 23:06:48 +0900
+Processing by ContentsController#index as HTML
+  Rendered contents/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 56ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 23:06:48 +0900
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2012-06-17 23:06:52 +0900
+
+
+Started GET "/auth/twitter/callback?oauth_token=ciEEWNeD4g3BfMBGcqzjYqts65MWPBjVRO3kltYumVI&oauth_verifier=Hw04XSdDjELvTspXbzkdqiv5F709b0jLUr3MPN0f80" for 127.0.0.1 at 2012-06-17 23:06:53 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"ciEEWNeD4g3BfMBGcqzjYqts65MWPBjVRO3kltYumVI", "oauth_verifier"=>"Hw04XSdDjELvTspXbzkdqiv5F709b0jLUr3MPN0f80", "provider"=>"twitter"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'twitter' AND "users"."uid" = '595589986' LIMIT 1
+Redirected to http://oauthtest.dev/contents/buttons
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/contents/buttons" for 127.0.0.1 at 2012-06-17 23:06:55 +0900
+Processing by ContentsController#buttons as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered text template (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered contents/buttons.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 738ms (Views: 41.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-17 23:06:55 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
